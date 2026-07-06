@@ -1,6 +1,6 @@
 <?php
-require_once __DIR__ . '/../config/database.php';
-require_once __DIR__ . '/../models/Ticket.php';
+require_once __DIR__ . '/config/database.php';
+require_once __DIR__ . '/models/Ticket.php';
 
 class TicketController {
     private $ticketModel;
