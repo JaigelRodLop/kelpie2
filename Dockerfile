@@ -5,8 +5,8 @@ RUN apt-get update && apt-get install -y libpq-dev \
 # Copiar carpeta public como raíz del servidor
 COPY public/ /var/www/html/
 
-# Copiar src y sql al mismo nivel que html
-COPY src/ /var/www/src/
-COPY sql/ /var/www/sql/
+# Copiar src y sql dentro de /var/www/html
+COPY src/ /var/www/html/src/
+COPY sql/ /var/www/html/sql/
 
 EXPOSE 80

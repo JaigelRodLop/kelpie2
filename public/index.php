@@ -1,7 +1,7 @@
 <?php
-require_once __DIR__ . "/src/config/database.php";
-require_once __DIR__ . '/../src/controllers/AuthController.php';
-require_once __DIR__ . '/src/config/roles.php';
+require_once "/var/www/src/config/database.php";
+require_once "/var/www/src/controllers/AuthController.php";
+require_once "/var/www/src/config/roles.php";
 
 $db = new Database();
 $conn = $db->connect();
