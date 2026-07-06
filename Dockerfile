@@ -5,8 +5,4 @@ RUN apt-get update && apt-get install -y libpq-dev \
 # Copiar todo el proyecto
 COPY . /var/www/html/
 
-# Configurar Apache para usar el puerto de Render
-RUN sed -i "s/Listen 80/Listen ${PORT}/" /etc/apache2/ports.conf \
-    && sed -i "s/:80/:${PORT}/" /etc/apache2/sites-available/000-default.conf
-
-EXPOSE ${PORT}
+EXPOSE 80
