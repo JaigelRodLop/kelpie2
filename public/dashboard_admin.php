@@ -1,7 +1,7 @@
 <?php
-require_once __DIR__ . '/../src/middleware/AuthMiddleware.php';
-require_once __DIR__ . '/../src/middleware/RoleMiddleware.php';
-require_once __DIR__ . '/../src/config/database.php';
+require_once __DIR__ . '/src/middleware/AuthMiddleware.php';
+require_once __DIR__ . '/src/middleware/RoleMiddleware.php';
+require_once __DIR__ . '/src/config/database.php';
 require_once __DIR__ . '/../src/controllers/UserController.php';
 require_once __DIR__ . '/../src/controllers/TicketController.php';
 
